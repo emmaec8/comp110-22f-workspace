@@ -1,8 +1,5 @@
 """EX01 - Chardle - A cute step toward Wordle."""
-from itertools import count
-
-
-_author_ = "730383494"
+__author__ = "730383494"
 
 character_word: str = input("Enter a 5-character word: ")
 if len(character_word) != 5:
@@ -14,23 +11,23 @@ if len(single_character) != 1:
     exit()
 print("Searching for " + single_character + " in " + character_word)
 number_of_matching_characters = 0
-if character_word [0] == single_character:
+if character_word[0] == single_character:
     print(single_character + " found at index 0")
     number_of_matching_characters = number_of_matching_characters + 1
-if character_word [1] == single_character:
+if character_word[1] == single_character:
     print(single_character + " found at index 1")
     number_of_matching_characters = number_of_matching_characters + 1
-if character_word [2] == single_character:
+if character_word[2] == single_character:
     print(single_character + " found at index 2")
     number_of_matching_characters = number_of_matching_characters + 1
-if character_word [3] == single_character:
+if character_word[3] == single_character:
     print(single_character + " found at index 3")
     number_of_matching_characters = number_of_matching_characters + 1
-if character_word [4] == single_character:
+if character_word[4] == single_character:
     print(single_character + " found at index 4")
     number_of_matching_characters = number_of_matching_characters + 1
 if number_of_matching_characters == 0:
-    print("No instances")
+    print("No instances of " + single_character + " found in " + character_word)
 if number_of_matching_characters == 1:
     print("1 instance of " + single_character + " found in " + character_word)
 if number_of_matching_characters == 2:
