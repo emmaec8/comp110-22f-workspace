@@ -6,7 +6,6 @@ guess: str = input("What is your 6-letter guess? ")
 WHITE_BOX: str = "\U00002B1C"
 GREEN_BOX: str = "\U0001F7E9"
 YELLOW_BOX: str = "\U0001F7E8"
-#index_variable: str = guess[0]
 letter_count: int = 0
 emoji_string: str = ""
 while len(guess) != len(secret_word):
@@ -34,4 +33,3 @@ if guess == secret_word:
     print("Woo! You got it!")
 else:
     print("Not quite. Play again soon!")
-
